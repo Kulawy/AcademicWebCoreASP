@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Piwerko: @ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+    @RenderSection("css_styles", false)
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <header>
+        <a href="#koniec_strony"><img src="~/_img/@ViewBag.Baner" style="width: 100%; height:auto " alt="page banner" /></a>
+        <nav>
+            <ul>
+                <li @RenderSection("indexA", false)><a asp-controller="App" asp-action="Index">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="aboutBeer.html">About Beer</a></li>
+                <li @RenderSection("aboutA", false)><a asp-controller="App" asp-action="About">About Page</a></li>
+                <li @RenderSection("contactA", false)><a asp-controller="App" asp-action="Contact">Contact</a></li>
+                <li><a href="additionalnfoForm.html">Tell us about yourself</a></li>
+                <li><a href="beerTable.html">Beer Tables</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="#">Menu</a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Opcja 1 </a>
+                            <a href="#">Opcja 2 </a>
+                            <a href="#">Opcja 3 </a>
+                            <a class="dropdown" href="#">Opcja 4 </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="game.html">Game</a></li>
+                <li id="log_in"><a href="logIn.html">Register</a></li>
+                <li id="login2"><a href="login2.html">Login</a></li>
+
+            </ul><br />
+        </nav>
+    </header>
+
+    @RenderBody()
+
+
+    <footer>
+        <details>
+            <summary>Copyright &copy; 2018 Jakub Geroń, Marcin Krawczyk - Studenci PWr</summary>
+            <p>pictures are taken from googl search but edited</p>
+        </details>
+    </footer>
+
+    <!--<script src="/../node_modules/jquery/dist/jquery.min.js"></script>-->
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    @RenderSection("Scripts", false)
+</body>
+
+</html>

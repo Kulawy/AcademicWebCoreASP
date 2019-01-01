@@ -1,0 +1,175 @@
+/*
+*{
+    border: 0.1em solid blue;
+}
+*/
+
+body{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+    align-content: center;
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        background-image: url("../_img/background_img.png");
+        background-attachment: fixed;
+    }
+}
+
+.navigation_bar{
+    position: sticky;
+    top:0;
+    padding: 50px 0 ;
+}
+
+.wrapper{
+    position: relative;
+}
+
+section{
+    /*max-width: 500px;
+    margin: auto;*/
+    align-content: center;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+    display: block;
+    /*display: flex;
+    align-items: center;*/
+}
+
+
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li{
+    float: left;
+}
+
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 12px;
+    text-decoration: none;
+}
+
+/*nav li:hover {
+    background-color: #630;
+}*/
+
+button.dropbtn {
+    width: inherit;
+    height: inherit;
+    background-color: darkgoldenrod;
+    color: white;
+    text-decoration: none;
+    border:none;
+    cursor: pointer;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+	background-color: black;
+	min-width: 180px;
+	z-index: 1;
+}
+.dropdown-content a{
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: coral;
+}
+
+li a:hover, .dropdown:hover .dropbtb{
+    background-color: royalblue;
+}
+
+
+.active{
+    background-color: #fc6;
+}
+
+li.menuItem {
+   float: none;
+   color: white;
+}
+
+li.menuItem:nth-child(2) {
+	background-color: red;
+}
+
+.fancyBorder {
+	border-style: dashed;
+	border-width: 0.2em;
+	border-color: magenta;
+	padding: .4em;
+	display: inline-block;
+}
+
+#log_in{
+    float: right;
+}
+
+footer{
+    text-align: center;
+    border-top: 1pt black solid;
+    background-color: gray;
+    padding: 1em 0;
+    margin-top: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer details{
+    display: block;
+}
+
+#beer_photo{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+h1 {
+    font-size: 21pt;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 10px inset green;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,74 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Piwerko</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--[if lt IE 9]>
+                    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+                <![endif]-->
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#navigation_bar"><img src=../_img/banner.png style="width: 100%; height: auto " alt="page banner" /></a>
+        <nav id="navigation_bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="aboutBeer.html">About Beers</a></li>
+                <li><a href="about.html">About Page</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="additionalnfoForm.html">Tell us about yourself</a></li>
+                <li id="log_in"><a href="login2.html">Login</a></li>
+            </ul><br />
+        </nav>
+    </header>
+    <section>	   
+        <form class="contactForm" method="POST" action="../php/contact.php">
+            <label>email:</label>
+			<div>
+            <input name="address" id="address" />
+			</div>
+			   
+               <div><label>First name:</label></div>
+			   <div>
+               <input type = "text" name = "fname"></div>
+            <div><label>Last name:</label></div>
+			<div>
+              <input type = "text" name = "lname"></div>
+            <div><label>Email:</label></div>
+			  <div>
+                <input type = "text" name = "email">
+              </div>            
+			  <div>
+                <label>Phone:</label>
+              </div>
+			  <div>
+                <input type = "text" name = "phone" placeholder = "(555) 555-5555">
+              </div> 
+			  <div>
+                <label>Message:</label>
+              </div>
+			  <div>
+			    <textarea name="message" placeholder="enter your message here" ></textarea>
+			  </div>
+
+            <input id="sendMsg" type="submit" value="Send" />
+        </form>
+    </section>
+    <footer>
+        <details>
+            <summary>Copyright &copy; 2018 Jakub Geroń, Marcin Krawczyk - Studenci PWr</summary>
+            <p>pictures are taken from googl search but edited</p>
+        </details>
+    </footer>
+    <script type="text/javascript" src="../js/scriptContact.js"></script>
+</body>
+
+</html>

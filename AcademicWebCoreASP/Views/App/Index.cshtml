@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Home";
+    ViewBag.Baner = "baner.png";
+}
+@section css_styles{
+    <link rel="stylesheet" type="text/css" href="~/css/styleIndex.css" />
+}
+@section Scripts{
+    <script type="text/javascript" src="~/js/scriptIndex.js"></script>
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}
+@section indexA{ 
+    class="active"
+}
+
+<div class="wrapper">
+    <section>
+        <div id="beer_photo">
+            <a href="https://www.google.pl/search?q=piwko&rlz=1C1CHZL_plPL716PL716&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiY7vX5kvrdAhUxw4sKHdOAA6kQ_AUIDigB&biw=1396&bih=686">
+                <img src="~/_img/img.png" height=300 width=400 alt="image of beer" />
+            </a>
+        </div>
+        <form action="/">
+            <input name="searchBox" />
+            <input type="submit" value="search" />
+        </form>
+        <br>
+        <a href="mailto:jankowalski@gmail.com">wyslij maila do kowalskiego</a>
+
+        <article>
+            <div>
+                <h1 class="fancyBorder"><b>Piwo to bardzo zdrowy napój</b></h1>
+                <p> Powinno się pić bardzo dużo piwka </p>
+            </div>
+        </article><br>
+        <div id="end">
+            <a name="koniec_strony">Skończyło się? Otwórz kolejne ;)</a>
+        </div>
+        <br><br><br>
+
+    </section>
+</div>

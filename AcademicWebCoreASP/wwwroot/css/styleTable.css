@@ -1,0 +1,116 @@
+.backOf{
+    background-image: url(../_img/piwo.png), url(../_img/wood_texture.jpg);
+    background-position: bottom left, 100% center;
+    background-origin: border-box, content-box;
+    background-repeat: no-repeat, repeat;
+    height: 800px;
+    margin: 0 0 4em 0;
+}
+
+h1 {
+	 background-color: lightgrey;
+     font-family: "Poor Story"	
+}
+    
+
+.beerbox{
+    background-color: lightgrey;      
+    font-family: "Poor Story"		
+}
+
+.beerbox {
+/* setting the number of columns to 3 */
+           	  -webkit-column-count: 3;
+              -moz-column-count: 3;   
+               -o-column-count: 3;     
+              column-count: 3;        
+              /* setting the space between columns to 30px */
+               -webkit-column-gap: 30px;
+               -moz-column-gap: 30px;   
+               -o-column-gap: 30px;     
+              column-gap: 30px;        
+               /* adding a 1px black line between each column */
+               -webkit-column-rule: 1px outset black;
+               -moz-column-rule: 1px outset black;   
+               -o-column-rule: 1px outset black;     
+               column-rule: 1px outset black;        
+}
+
+@media handheld and (max-width: 480px), 
+               screen and (max-device-width: 480px),
+               screen and (max-width: 480px)        
+{
+.beerbox  {
+                     -webkit-column-count: 1;
+                     column-count: 1; 
+        }      
+}
+
+/* styles for devices with screen widths of 481px to 1024px */
+@media only screen and (min-width: 481px) and (max-width: 1024px)                       
+{
+    .beerbox {
+                  -webkit-column-count: 2;              
+                  column-count: 2;                      
+                  -webkit-column-gap: 30px;             
+                  column-gap: 30px;                     
+                 -webkit-column-rule: 1px outset black;
+                  column-rule: 1px outset black; }      
+            }
+            /* styles for devices with screen widths of 1025px or greater */
+            @media only screen and (min-width: 1025px)
+            {              .beerbox  {
+                  -webkit-column-count: 3;              
+                  column-count: 3;                      
+                  -webkit-column-gap: 30px;             
+                 column-gap: 30px;                     
+                  -webkit-column-rule: 1px outset black;
+                  column-rule: 1px outset black; }      
+            }
+	
+    .flexbox
+         {
+            width: 600px;
+            height: 420px;
+            display: -webkit-box;          
+            display: box;
+            margin: 0 auto;			
+            -webkit-box-orient: horizontal;
+            box-orient: horizontal;  
+            font-family: "Poor Story"			
+         }
+         .flexbox > div
+         {
+            -webkit-transition: 1s ease-out;
+            transition: 1s ease-out;        
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 120px;
+            margin: 10px 10px 10px 0px;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 10px 10px 10px dimgrey;
+         }
+         .flexbox > div:nth-child(1){ background-color: lightgrey; }
+         .flexbox > div:nth-child(2){ background-color: lightgrey; }
+         .flexbox > div:nth-child(3){ background-color: lightgrey; }
+      
+
+         .flexbox > div:hover {                                            
+            width: 200px; color: white; font-weight: bold; 
+        }               
+         .flexbox > div:nth-child(1):hover { background-color: royalblue; }
+         .flexbox > div:nth-child(2):hover { background-color: crimson; }  
+         .flexbox > div:nth-child(3):hover { background-color: green; }  
+        
+p {
+     height: 250px; overflow: hidden;  
+}     
+
+#surowce{
+    text-align: center;
+}
+
+.beerbox h2{
+    text-align: center;
+}

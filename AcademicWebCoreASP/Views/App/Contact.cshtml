@@ -1,0 +1,75 @@
+﻿@model ContactViewModel
+@{
+    ViewBag.Title = "Contact";
+    ViewBag.Baner = "banner.png";
+}
+@section contactA{
+    class="active"
+}
+@section Scripts{
+    @*<script type="text/javascript" src="~/js/scriptContact.js"></script>*@
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}
+
+<section>
+    <form class="contactForm" method="POST">
+        <div class="error" asp-validation-summary="ModelOnly">
+
+        </div>
+        <div>
+            <label asp-for="Address">Email address:</label>
+        </div>
+        <div>
+            <input id="Address" asp-for="Address" />
+            <span class="error" asp-validation-for="Address"></span>
+        </div>
+
+        <div>
+            <label asp-for="Fname">First name:</label>
+        </div>
+        <div>
+            <input type="text" asp-for="Fname" />
+            <span class="error" asp-validation-for="Fname"></span>
+        </div>
+        <div>
+            <label asp-for="Lname">Last name:</label>
+        </div>
+        <div>
+            <input type="text" asp-for="Lname" />
+            <span class="error" asp-validation-for="Lname"></span>
+        </div>
+        <div>
+            <label asp-for="Email">Email:</label>
+        </div>
+        <div>
+            <input type="text" asp-for="Email" />
+            <span class="error" asp-validation-for="Email"></span>
+        </div>
+        <div>
+            <label asp-for="Phone">Phone:</label>
+        </div>
+        <div>
+            <input type="text" asp-for="Phone" placeholder="+48-555-555-555" />
+            <span class="error" asp-validation-for="Phone"></span>
+        </div>
+
+
+        <div>
+            <label asp-for="Message">Message:</label>
+        </div>
+        <div>
+            <textarea asp-for="Message" placeholder="enter your message here"></textarea>
+            <span class="error" asp-validation-for="Message"></span>
+        </div>
+
+        <input id="sendMsg" type="submit" value="Send" />
+        <div>
+            @ViewBag.UserMessage
+        </div>
+
+        <div>
+            @ViewData["contactForm"]
+        </div>
+    </form>
+</section>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src=../_img/banner.png width="100%" height="auto" alt="piwo to nasze paliwo" />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="aboutBeer.html">About Beers</a></li>
+                <li><a href="about.html">About Page</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="additionalnfoForm.html">Tell us about yourself</a></li>
+                <li class="active"><a href="#nazwa_etykiety">Page down </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+         <body>
+        <h1>Zarejestruj się</h1>
+		<h2>Zostan piwoszem</h2>
+    
+       <form method = "post" autocomplete = "on">
+           <p><label>First Name:              
+		        <input  type = "text" id = "firstName"
+                placeholder = "Imie" autocomplete /> (Imie)
+             </label></p>
+          <p><label>Last Name:
+             <input type = "text" id = "lastName"
+                 placeholder = "Nazwisko" required autocomplete /> (Nazwisko)
+              </label></p>
+           <p><label>Email:
+               <input type = "email" id = "email"
+                  placeholder = "name@domain.com" autocomplete  /> (nazwa@domena.com)
+             </label></p>
+			 <p>
+               <label>Tel:
+                  <input type = "tel" id="tel" autocomplete placeholder = "(###) ###-####"
+                     pattern = "\(\d{3}\) +\d{3}-\d{4}" /> 
+                     (###) ###-####                                 
+              </label>
+            </p>
+            <p><label for = "txtList">Miesiac urodzin:
+              <input type = "text" id = "txtList"                                  
+			  placeholder = "Select a month" autocomplete list = "months" />
+               <datalist id = "months">       
+                 <option value = "January">  
+                 <option value = "February"> 
+                  <option value = "March">    
+                  <option value = "April">    
+                  <option value = "May">      
+                  <option value = "June">     
+                  <option value = "July">     
+                  <option value = "August">   
+                  <option value = "September">
+                  <option value = "October">  
+                  <option value = "November"> 
+                  <option value = "December"> 
+               </datalist>                    
+            </label></p>
+			<p id="helpText"></p>
+            <p><input type = "submit" value = "Submit" />
+			<input type = "reset" value = "Clear" /></p>
+         </form>
+      </body>
+    </section>
+    <footer>
+        &copy; 2018 Jakub Geroń, Marcin Krawczyk - Studenci PWr
+    </footer>>
+</body>
+
+</html>

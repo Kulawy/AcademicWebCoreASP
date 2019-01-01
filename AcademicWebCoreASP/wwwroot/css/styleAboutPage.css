@@ -1,0 +1,68 @@
+
+article{
+    margin: 0 3em;
+    padding: 0 1em;
+}
+
+#beer_photo{
+    align-content: center;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    left: 25%;
+
+    -webkit-animation: movingImage linear 4s 1s 2 alternate;
+    -moz-animation: movingImage linear 4s 1s 2 alternate;
+    animation: movingImage linear 4s 2 1s alternate;
+    
+}
+
+@keyframes movingImage
+    {
+        0% {opacity: 1; left: 150px; top: 0px;}
+        25% {opacity: 0; left: 350px; top:0px;}
+        50% {opacity: 1; left: 150px; top: 0px;}
+        75% {opacity: 0; left: 350px; top: 0px;}
+        100% {opacity: 1; left: 150px; top: 0px;}
+    };
+
+#first_p_about{
+    font-size: 150%;
+}
+
+#first_p_about{
+    text-shadow: 5px 5px 3px gray;
+    background-color: rgba(110, 109, 107, 0.4);
+    padding: 1em;
+    border: 2px dashed black;
+    border-radius: 20%;
+
+}
+
+#around_text{
+    margin: 6pt;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: #e6c0438c;
+    box-shadow: 20px 20px 60px goldenrod
+}
+
+section{
+    margin: 2em;
+
+}
+
+aside{
+    text-align: center;
+}
+
+h1{
+    padding: 6pt;
+    border: 2px dotted black;
+    border-radius: 30px;
+    background-color: hsla(0, 0%, 97%, 0.60);
+}
+
+
+
+

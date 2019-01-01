@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\html\about.html" />
+    <None Include="wwwroot\html\aboutBeer.html" />
+    <None Include="wwwroot\html\additionalnfoForm.html" />
+    <None Include="wwwroot\html\beerTable.html" />
+    <None Include="wwwroot\html\catalog.html" />
+    <None Include="wwwroot\html\contact.html" />
+    <None Include="wwwroot\html\game.html" />
+    <None Include="wwwroot\html\index.html" />
+    <None Include="wwwroot\html\logIn.html" />
+    <None Include="wwwroot\html\login2.html" />
+    <None Include="wwwroot\html\register.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="OdeToCode.UseNodeModules" Version="1.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Pages\_ViewStart.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
+</Project>

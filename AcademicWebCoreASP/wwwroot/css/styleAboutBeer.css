@@ -1,0 +1,35 @@
+#details01{
+    padding: 2px;
+    margin: 0 0 2em 0;
+}
+
+#details01{
+    /*background: -webkit-linear-gradient(
+        linear, center top, center bottom,
+        color-stop(15%, white), color-stop(50%, lightsteelblue), color-stop(75%, navy)
+    );*/
+    background: -webkit-linear-gradient(
+        top, white 15%, rgb(235, 210, 103) 50%,  rgb(196, 133, 16) 75%
+    );
+    background: -moz-linear-gradient(
+        top, white 15%, rgb(235, 210, 103) 50%,  rgb(196, 133, 16) 75%
+    );
+    background: linear-gradient(
+        top, white 15%, rgb(235, 210, 103) 50%, rgb(196, 133, 16) 75%
+    );
+    
+}
+
+footer{
+    background: -webkit-radial-gradient(
+        center bottom, white 15%, rgb(235, 210, 103) 50%, rgb(196, 133, 16) 75%
+    );
+    background: -moz-radial-gradient(
+        center bottom, white 15%, rgb(235, 210, 103) 50%, rgb(196, 133, 16) 75%
+    );
+    background:linear-gradient(
+        center bottom, white 15%, rgb(235, 210, 103) 50%, rgb(196, 133, 16) 75%
+    );
+    
+}
+

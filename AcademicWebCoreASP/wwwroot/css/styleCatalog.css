@@ -1,0 +1,48 @@
+#specView{
+    border: 2em solid transparent;
+    -webkit-border-image: url(../_img/piwo_border.png) 35% 35% repeat;
+    -moz-border-image: url(../_imgpiwo_border.png)  35% 35% repeat;
+    -o-border-image: url(../_img/piwo_border.png)  35% 35% repeat;
+    border-image: url(../_img/piwo_border.png) 35% 35% repeat;
+}
+
+/*
+.backOf{
+    background-image: url(_img/piwo.png), url(_img/wood_texture.jpg);
+    background-position: bottom left, 100% center;
+    background-origin: border-box, content-box;
+    background-repeat: no-repeat, repeat;
+    
+}
+*/
+
+.beerImg{
+    margin: 1em 0 6em 0;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    
+    -webkit-transition: -webkit-transform 4s;
+    -moz-transition: -moz-transform 4s;
+    -o-transition: -o-transform 4s;
+    transition: transform 4s;
+
+}
+
+.beerImg:hover {
+    -webkit-transform: rotate(90deg) scale(1, 1);
+    -moz-transform: rotate(360deg) scale(1, 1);
+    -o-transform: rotate(360deg) scale(1, 1);
+    transform: rotate(90deg) scale(1, 1);
+}
+
+.beerImg img{
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 4s ease-in-out;
+    transition: opacity 4s ease-in-out;
+}
+
+.beerImg img#full:hover{
+    opacity: 0;
+}

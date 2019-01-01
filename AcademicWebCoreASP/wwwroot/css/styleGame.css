@@ -1,0 +1,42 @@
+
+.beers{
+    margin: 6em;
+}
+
+.button_wraper{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+button{
+    margin:0;
+}
+
+.darkBackground {
+	background-color: #33130d;
+}
+
+.beerImg{
+    margin: 3em;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+
+}
+
+
+
+.beerImg img{
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 4s ease-in-out;
+    transition: opacity 4s ease-in-out;
+}
+
+.beerImg img#full:visited{
+    opacity: 0;
+}

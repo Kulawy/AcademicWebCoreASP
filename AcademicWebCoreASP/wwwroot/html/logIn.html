@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Piwerko</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <header>
+        <a href="#koniec_strony"><img src=../_img/banner.png width="100%" height="auto" alt="page banner" /></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="aboutBeer.html">About Beers</a></li>
+                <li><a href="about.html">About Page</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="additionalnfoForm.html">Tell us about yourself</a></li>
+                <li id="log_in" class="active"><a href="logIn.html">Register</a></li>
+            </ul><br />
+        </nav>
+    </header>
+    <section>
+        <form method="POST" autocomplete="on">
+            <label for="first_name">imie: </label>
+            <input name="first_name"  id="first_name" autofocus />
+            <br />
+            <label for="last_name"  >nazwisko: </label>
+            <input name="last_name" id="last_name" required />
+            <br />
+            <label for="month_bd">miesiac urodzin: </label>
+            <input name="month_bd" id="month_bd" list="months" />
+            <datalist id="months">
+                <option value="Styczeń">
+                <option value="Luty">
+                <option value="Marzec">
+                <option value="Kwiecień">
+                <option value="Maj">
+                <option value="Czerwiec">
+                <option value="Lipiec">
+                <option value="Sierpień">
+                <option value="Wrzesień">
+                <option value="Październik">
+                <option value="Listopad">
+                <option value="Grudzień">
+            </datalist>
+            <br />
+            <label for="address">email:
+                <input name="address" id="email" type="email" required />
+                nazwa@nazwa_domeny.com
+            </label>
+            <br />
+            <label for="phone">tel: +48
+                <input id="phone" name="phone" type="tel" pattern="#########" />
+                XXXXXXXXX
+            </label>
+            <br />
+            
+            <input type="checkbox" name="opened" id="opened" checked="true" />
+            <label for="opened">Zaznaczone ?</label>
+            <br />
+			<p id="helpText"></p>
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+    </section>
+    <footer>
+        &copy; 2018 Jakub Geroń, Marcin Krawczyk - Studenci PWr
+    </footer>
+	<script type="text/javascript" src="../js/scriptRegister.js"></script>
+</body>
+
+</html>
