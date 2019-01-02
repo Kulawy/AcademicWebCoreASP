@@ -79,11 +79,11 @@ button.dropbtn {
     cursor: pointer;
 }
 
-li.dropdown {
+li.dropdown-m {
 	display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-m-content {
     
     display: none;
     position: absolute;
@@ -91,21 +91,21 @@ li.dropdown {
 	min-width: 180px;
 	z-index: 1;
 }
-.dropdown-content a{
+.dropdown-m-content a{
     color: white;
     display: block;
     text-decoration: none;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-m:hover .dropdown-m-content {
 	display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-m-content a:hover {
     background-color: coral;
 }
 
-li a:hover, .dropdown:hover .dropbtb{
+li a:hover, .dropdown-m:hover .dropbtn{
     background-color: royalblue;
 }
 

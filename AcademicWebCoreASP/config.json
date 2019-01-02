@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "BeerConnectionString": "server=(localdb)\\MSSQLLocalDB; Database=BeerSiteDb; Integrated Security=true; MultipleActiveResultSets=true;"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 0,
+    "BeerName": "Okocim Polskie Ale",
+    "BeerCategory": "Pal Ale",
+    "Description": "Taste like pice of haven",
+    "Producer": "Carlsberg",
+    "AddTime": "2000-01-01T00:00:00",
+    "Price": 2.99,
+    "PhotoId": "BR-OM-01"
+  },
+  {
+    "Id": 0,
+    "BeerName": "Ksiazece Pszeniczne",
+    "BeerCategory": "Pszeniczne",
+    "Description": "Taste like pice of haven",
+    "Producer": "Ksiazece",
+    "AddTime": "2000-01-01T00:00:00",
+    "Price": 2.69,
+    "PhotoId": "BR-KS-01"
+  },
+  {
+    "Id": 0,
+    "BeerName": "Lezansk Chmielowe",
+    "BeerCategory": "Chmielowe",
+    "Description": "Taste like pice of haven",
+    "Producer": "Haineken",
+    "AddTime": "2000-01-01T00:00:00",
+    "Price": 2.5,
+    "PhotoId": "BR-LK-02"
+  }
+]

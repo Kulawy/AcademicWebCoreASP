@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Piwerko: @ViewBag.Title</title>
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="~/css/style.css" />
     @RenderSection("css_styles", false)
     <!--[if lt IE 9]>
@@ -23,17 +24,17 @@
                 <li><a href="additionalnfoForm.html">Tell us about yourself</a></li>
                 <li><a href="beerTable.html">Beer Tables</a></li>
                 <li>
-                    <div class="dropdown">
-                        <button class="dropbtn"><a href="#">Menu</a></button>
-                        <div class="dropdown-content">
-                            <a href="#">Opcja 1 </a>
-                            <a href="#">Opcja 2 </a>
-                            <a href="#">Opcja 3 </a>
-                            <a class="dropdown" href="#">Opcja 4 </a>
+                    <div class="dropdown-m">
+                        <button class="dropbtn"><a href="#">Beer Store</a></button>
+                        <div class="dropdown-m-content">
+                            <a asp-controller="App" asp-action="Shop">Shop</a>
+                            <a asp-controller="App" asp-action="Basket">Basket</a>
+                            <a href="#">option 3</a>
+                            <a class="dropdown-m" href="#">option 4</a>
                         </div>
                     </div>
                 </li>
-                <li><a href="game.html">Game</a></li>
+                <li @RenderSection("gameA", false)><a asp-controller="App" asp-action="Game">Game</a></li>
                 <li id="log_in"><a href="logIn.html">Register</a></li>
                 <li id="login2"><a href="login2.html">Login</a></li>
 
@@ -53,6 +54,7 @@
 
     <!--<script src="/../node_modules/jquery/dist/jquery.min.js"></script>-->
     <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     @RenderSection("Scripts", false)
 </body>
 

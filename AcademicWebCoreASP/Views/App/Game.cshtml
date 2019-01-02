@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Game";
+    ViewBag.Baner = "banner.png";
+}
+@section css_styles{
+    <link rel="stylesheet" type="text/css" href="~/css/styleGame.css" />
+}
+@section Scripts{
+    <script type="text/javascript" src="~/js/scriptGame.js"></script>
+    <script type="text/javascript" src="../js/scriptChangeStyle.js"></script>
+}
+@section gameA{
+    class="active"
+}
+
+
+<div class="button_wraper">
+    <button id="startGame" onclick="startGame()">
+        Start Game
+    </button>
+</div>
+<div class="button_wraper">
+    <button id="switchMode" onclick="switchBackground()">
+        Switch background
+    </button>
+</div>
+<div class="button_wraper">
+    <h2> Status: <a id="state">Sober</a></h2>
+</div>
+
+
+<div class="wrapper">
+    <div id="wrapperID">
+
+    </div>
+    <section>
+        <!--<div class="beerImg">
+            <img id="empty" src="_img/emptyGlass.png">
+            <img id="full" src="_img/piwo.png">
+        </div>-->
+    </section><br>
+</div><br><br>
