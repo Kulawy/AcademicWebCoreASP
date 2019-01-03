@@ -5,8 +5,14 @@ namespace AcademicWebCoreASP.Data
 {
     public interface IBeerRepo
     {
+        bool SaveChanges();
+
         IEnumerable<Product> GetAllProducts();
         IEnumerable<Product> GetProductsByCategory(string category);
-        bool SaveChanges();
+
+        IEnumerable<Order> GetAllOrders();
+        Order GetOrderById(int id);
+        void AddEntity(object model);
+
     }
 }

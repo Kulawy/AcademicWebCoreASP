@@ -1,5 +1,8 @@
 ﻿@model IEnumerable<Product>
 
+@section css_styles{
+    <link rel="stylesheet" type="text/css" href="~/css/styleShop.css" />
+}
 
 <section>
     <h1>@ViewBag.Title</h1>
@@ -9,23 +12,30 @@
         <li>@p.BeerName</li>
     }
 
-    <div class="row">
+    <div class="row" id="products-row">
         @foreach (var p in Model)
         {
-            <div class="col-md-3">
-                <img class="img-fluid" src="~/_img/beers/@(p.PhotoId).png" />
-                <h3>@p.BeerName</h3>
-                <h5 style="font-style:italic">by  @p.Producer</h5>
-                <ul class="product-props">
-                    <li>Name: @p.BeerName</li>
-                    <li>Producer: @p.Producer</li>
-                    <li>Category: @p.BeerCategory</li>
-                    <li>Description: @p.Description</li>
-                    <li>Price: @p.Price</li>
-                </ul>
-                <button id="buyButon" class="btn btn-success">Buy</button>
+            <div class="col-md-3" id="product-container">
+
+                <div>
+                    <div class="col-md-4" style="float:left;">
+                        <img class="img-thumbnail" id="product-img" src="~/_img/beers/@(p.PhotoId).png" alt="@p.BeerName" />
+                    </div>
+                    <div class="col-md-8" style="float: right;">
+                        <h3>@p.BeerName</h3>
+                        <h5 style="font-style:italic">by  @p.Producer</h5>
+                        <ul class="product-props">
+                            <li>Name: @p.BeerName</li>
+                            <li>Producer: @p.Producer</li>
+                            <li>Category: @p.BeerCategory</li>
+                            <li>Description: @p.Description</li>
+                            <li>Price: @p.Price</li>
+                        </ul>
+                        <button id="buyButon" class="btn btn-success">Buy</button>
+                    </div>
+                </div>
+
             </div>
         }
     </div>
-
 </section>

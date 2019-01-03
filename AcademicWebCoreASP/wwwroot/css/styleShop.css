@@ -1,0 +1,18 @@
+﻿#product-container {
+    margin: 1px;
+    background-color: rgba(172, 115, 13, 0.66);
+    padding: 15px 1px;
+    border-radius: 10px;
+}
+
+#product-img {
+    max-height: 200px;
+    margin-top: 30px;
+}
+
+#buyButon {
+    margin-bottom: 5px;
+}
+#products-row{
+    margin-bottom: 90px;
+}

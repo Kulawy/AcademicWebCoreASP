@@ -14,7 +14,7 @@ namespace AcademicWebCoreASP.Controllers
     {
         private readonly IMailService _mailService;
         private readonly IBeerRepo _repo;
-        private readonly BeerDataContext _context;
+        //private readonly BeerDataContext _context;
 
         public AppController(IMailService mailService, IBeerRepo repo) //jeśli mamy IBeerRepo to zastępujemy BeerDataContext właśnie IBeerRepo
         {

@@ -33,6 +33,7 @@ namespace AcademicWebCoreASP.Data
                 var products = JsonConvert.DeserializeObject<IEnumerable<Product>>(json);
                 _ctx.Products.AddRange(products);
 
+                _ctx.Orders.Add(new Order());// zainicjowanie order
                 var order = _ctx.Orders.Where(o => o.Id == 1).FirstOrDefault();
                 if (order != null)
                 {

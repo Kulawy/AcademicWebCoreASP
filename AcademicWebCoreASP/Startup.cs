@@ -39,7 +39,9 @@ namespace AcademicWebCoreASP
             // Support for real mail service
 
             // DEPENDENCY INJECTION !
-            services.AddMvc();
+            services.AddMvc()
+                .AddJsonOptions( opt => opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
+                .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,15 +70,17 @@ namespace AcademicWebCoreASP
             //app.UseDefaultFiles(); kiedy już mmy app.UseMvC() to nie musimy mieć tego bo nie będziemy już działać w ten sposób, że łądujemy statycznie strony domyślne
             app.UseStaticFiles();
             app.UseNodeModules(env);
-            
-            app.UseMvc( cfg =>
-            {
-                cfg.MapRoute(
-                    "Default",
-                    "/{controller}/{action}/{id?}",
-                    new { controller = "App", Action = "Index" }
-                    );
-            });
+
+            app.UseMvc(cfg =>
+           {
+               cfg.MapRoute(
+                   "Default",
+                   "/{controller}/{action}/{id?}",
+                   new { controller = "App", Action = "Index" }
+                   );
+           });
+
+
 
         }
 
